@@ -8,8 +8,8 @@ version: '3.9'
 services:
 
   db:
-    image: arm64v8/postgres # Apple Silicon m1/m2 cpu'er
-    #image: postgres:latest  # Windows og apple Intel processorer
+    #image: arm64v8/postgres # Apple Silicon m1/m2 cpu'er
+    image: postgres:15.3  # Windows og apple Intel processorer
     container_name: db_2sem
     mem_limit: 1536MB
     mem_reservation: 1024MB
