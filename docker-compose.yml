@@ -1,4 +1,4 @@
-# Localhost Docker Compose fil for 2. semester på datamatiker uddannelsen i Lyngby efteråret 2023
+# Localhost Docker Compose fil for 2. semester på datamatiker uddannelsen i Lyngby 
 # Opretter to containere: 
 # db2sem: Postgresql data base server som kører på port 5432
 # pgadmin2sem: Webbaseret interface til brug af Postgres. Den tilgås på port 8080
