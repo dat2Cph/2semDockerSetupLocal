@@ -9,7 +9,7 @@ services:
 
   db:
     #image: arm64v8/postgres:16.2 # Apple Silicon m1/m2 cpu'er
-    image: postgres:16.3  # Windows og apple Intel processorer
+    image: postgres:16.2  # Windows og apple Intel processorer
     container_name: db_2sem
     mem_limit: 1536MB
     mem_reservation: 1024MB

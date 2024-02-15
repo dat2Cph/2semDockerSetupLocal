@@ -1,24 +1,20 @@
-# 2semDockerSetupLocal
-Local setup with Postgres and PgAdmin for 2nd semester
+# Setting up Postgres and PgAdmin
 
-# Setup Localhost
+This documents tells you  how to setup Postgres and PgAdmin for 2nd semester on you local machine. The two applications, Postgres and PgAdmin both run in isolated Docker Containers. Postgres as a Database Server and PgAdmin as a Database Client. You will launch PgAdmin through a browser.
 
-## Requirements
+![Postgres art](./images/postgresql_local.webp)
 
-- [Docker](https://docs.docker.com/get-docker/) Docker installed (Docker Desktop on Windows and Mac)
-
-## Documentation
-
-- [PostgreSQL](https://www.postgresql.org/) for database
-- [pgAdmin](https://www.pgadmin.org/) for database management
-- [Docker](https://www.docker.com/) for containerization
-- [Docker Compose](https://docs.docker.com/compose/) for container orchestratio
-
-## Setup
+## Setup Localhost
 
 ### 1. Install Docker Desktop
 
-[Docker Desktop](https://docs.docker.com/get-docker/). If you are installing on Windows, you might need to update WSL. A message with instructions will show if necessary during installation.
+[Docker Desktop](https://docs.docker.com/get-docker/). If you are installing on Windows, you might need to update WSL. A message with instructions will show if necessary during installation. If so, open the PowerShell as Administrator and type:
+
+```bash
+wsl --install
+```
+
+Now you have a Linux distribution on your Windows OS.
 
 ### 2. Clone this repo
 
@@ -33,21 +29,26 @@ Clone this repo and open the folder with docker-compose.yml in `Git Bash` on Win
 ### 3. Access Postgres pgadmin dashboard through browser
 
 ```bash
-  localhost://5050
+  localhost:8080
 ```
+
 #### 3.1. Login
-- login: **admin@cphbusiness.dk** (see docker-compose.yml)
+
+- login: **<admin@cphbusiness.dk>** (see docker-compose.yml)
 - password: **1234** (see docker-compose.yml)
 
 #### 3.2. Add new server
+
 - Host name/address: **db**
 - Port: **5432**
 - username: postgres
 - password: postgres
 
-*** 
+***
 
-###  Stop Docker
+## Docker commands
+
+### Stop Docker
 
 ```bash
   docker-compose down
@@ -56,6 +57,7 @@ Clone this repo and open the folder with docker-compose.yml in `Git Bash` on Win
 ### Reset DB data installation
 
 (-v) // remove volumes
+
 ```bash
  docker-compose down -v 
 ```
@@ -66,10 +68,16 @@ Clone this repo and open the folder with docker-compose.yml in `Git Bash` on Win
 
 ***
 
-## Debugging
+### Debugging
 
 - Check if all containers are running with `docker ps -a`
 - Check if all env variables are set in .env file and are correct
 - Check if docker compose has read all environment variables with `docker-compose config`
 - Check the logs of the individual container with `docker logs <container_name>` or `docker logs --follow <container_name>`
 
+## Documentation
+
+- [PostgreSQL](https://www.postgresql.org/) for database
+- [pgAdmin](https://www.pgadmin.org/) for database management
+- [Docker](https://www.docker.com/) for containerization
+- [Docker Compose](https://docs.docker.com/compose/) for container orchestratio
