@@ -2,6 +2,8 @@
 
 This documents tells you  how to setup Postgres and PgAdmin for 2nd semester on you local machine. The two applications, Postgres and PgAdmin both run in isolated Docker Containers. Postgres as a Database Server and PgAdmin as a Database Client. You will launch PgAdmin through a browser.
 
+This [video tutorial](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b2d67d7f-1dfe-4fe5-894c-b1170155d75f) introduces the setup procedure, as described in this document.
+
 ![Postgres art](./images/postgresql_local.webp)
 
 ## Setup Localhost
@@ -100,4 +102,6 @@ You can easily hide these guys:
 - [PostgreSQL](https://www.postgresql.org/) for database
 - [pgAdmin](https://www.pgadmin.org/) for database management
 - [Docker](https://www.docker.com/) for containerization
-- [Docker Compose](https://docs.docker.com/compose/) for container orchestratio
+- [Docker Compose](https://docs.docker.com/compose/) for container orchestration.
+
+![Tech Stack](./images/techstack.png)
