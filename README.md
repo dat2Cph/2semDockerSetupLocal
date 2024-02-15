@@ -23,7 +23,7 @@ Clone this repo and open the folder with docker-compose.yml in `Git Bash` on Win
 ### 2. Run Docker
 
 ```bash
-  docker-compose up -d
+  docker compose up -d
 ```
 
 ### 3. Access Postgres pgadmin dashboard through browser
@@ -51,7 +51,7 @@ Clone this repo and open the folder with docker-compose.yml in `Git Bash` on Win
 ### Stop Docker
 
 ```bash
-  docker-compose down
+  docker compose down
 ```
 
 ### Reset DB data installation
@@ -59,7 +59,7 @@ Clone this repo and open the folder with docker-compose.yml in `Git Bash` on Win
 (-v) // remove volumes
 
 ```bash
- docker-compose down -v 
+ docker compose down -v 
 ```
 
 ```bash
