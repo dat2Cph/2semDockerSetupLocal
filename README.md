@@ -39,10 +39,30 @@ Clone this repo and open the folder with docker-compose.yml in `Git Bash` on Win
 
 #### 3.2. Add new server
 
-- Host name/address: **db**
-- Port: **5432**
-- username: postgres
-- password: postgres
+- Choose: Server -> Register -> Server
+
+On Register - Server dialogue:
+
+- On General tab:
+  - Name: localhost
+
+- On Connection tab:
+  - Host name/address: **db**
+  - Port: **5432**
+  - username: postgres
+  - password: postgres
+
+![Connection](./images/pgadmin_db_connect.png)
+
+#### 3.3 Fine tune PgAdmin
+
+To simplify the UI, you can hide unused menus here:
+
+- File -> Preferences -> Nodes
+
+You can easily hide these guys:
+
+![Show/hide nodes](./images/pgadmin_nodes.png)
 
 ***
 
