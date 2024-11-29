@@ -25,7 +25,7 @@ services:
       - "5432:5432"
 
   pgadmin:
-    image: dpage/pgadmin4:8.3
+    image: dpage/pgadmin4:8.13
     container_name: pgadmin_2sem
     mem_reservation: 512MB
     mem_limit: 1024MB
