@@ -102,6 +102,7 @@ You can easily hide these guys:
 On a few laptops, Docker Desktop will not work. The problems can be hard to find - but these two areas are usually the case:
 
 A. Problems with hyper-V - need to be activated in your BIOS
+
 B. Problems with WSL. In the WSL case - it might help to do this:
   1. Uninstall the current Docker Desktop.
   2. Remove any .docker folder from your user directory.
