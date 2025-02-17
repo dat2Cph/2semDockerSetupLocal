@@ -97,6 +97,22 @@ You can easily hide these guys:
 - Check if docker compose has read all environment variables with `docker-compose config`
 - Check the logs of the individual container with `docker logs <container_name>` or `docker logs --follow <container_name>`
 
+### Windows errors when starting Docker Desktop
+
+On a few laptops, Docker Desktop will not work. The problems can be hard to find - but these two areas are usually the case:
+
+A. Problems with hyper-V - need to be activated in your BIOS
+B. Problems with WSL. In the WSL case - it might help to do this:
+  1. Uninstall the current Docker Desktop.
+  2. Remove any .docker folder from your user directory.
+  3. Clean the %temp% folder.
+  4. Unregister docker-desktop using WSL.
+  5. Run wsl --update.
+  6. Reinstall Docker Desktop.
+  7. Restart Windows.
+  8. Make sure WSL Ubuntu is running (check in powershell)
+  9. Start Docker Desktop
+
 ## Documentation
 
 - [PostgreSQL](https://www.postgresql.org/) for database
